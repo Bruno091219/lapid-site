@@ -1,5 +1,5 @@
 import { ArrowRight, Clock } from 'lucide-react';
-import { DiamondDecor, DiamondLogo } from './DiamondLogo';
+import { DiamondDecor } from './DiamondLogo';
 
 export function FinalCTA() {
   return (
@@ -20,8 +20,10 @@ export function FinalCTA() {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Logo */}
-        <div className="flex justify-center mb-8">
-          <DiamondLogo size={48} />
+        <div className="flex justify-center items-center gap-3 mb-8">
+          <img src="/lapid-logo-mark.svg" alt="" style={{ height: '40px', width: 'auto' }} />
+          <span style={{ fontFamily: "Georgia, 'Times New Roman', serif", fontSize: '30px', fontWeight: 700, letterSpacing: '4px', color: '#9d7147' }}>LAPID</span>
+          <span style={{ fontFamily: "Inter, -apple-system, 'Segoe UI', system-ui, sans-serif", fontSize: '22px', fontWeight: 300, letterSpacing: '5px', color: '#BEA885', opacity: 0.75 }}>Studio</span>
         </div>
 
         {/* Urgency badge */}

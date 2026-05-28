@@ -11,6 +11,6 @@
     <line x1="310" y1="140" x2="200" y2="340" stroke="#9d7147" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
     <line x1="200" y1="20" x2="200" y2="140" stroke="#9d7147" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
   </g>
-  <text x="62" y="38" font-family="Georgia, Times New Roman, serif" font-size="30" font-weight="700" letter-spacing="4" fill="#9d7147">LAPID</text>
-  <text x="198" y="38" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="300" letter-spacing="5" fill="#BEA885" opacity="0.75">Studio</text>
+  <text x="62" y="33" font-family="Georgia, Times New Roman, serif" font-size="30" font-weight="700" letter-spacing="4" fill="#9d7147" dominant-baseline="middle">LAPID</text>
+  <text x="198" y="33" font-family="Inter, Helvetica Neue, sans-serif" font-size="22" font-weight="300" letter-spacing="5" fill="#BEA885" opacity="0.75" dominant-baseline="middle">Studio</text>
 </svg>
