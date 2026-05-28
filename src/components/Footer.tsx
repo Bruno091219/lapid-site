@@ -1,5 +1,5 @@
 import { Share2, Play, Link2, Mail, MapPin } from 'lucide-react';
-import { DiamondLogo, DiamondDecor } from './DiamondLogo';
+import { DiamondDecor } from './DiamondLogo';
 
 const footerLinks = {
   Produto: [
@@ -46,7 +46,7 @@ export function Footer() {
         <div className="grid lg:grid-cols-6 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <DiamondLogo size={36} className="mb-5" />
+            <img src="/lapid-logo-vertical.svg" alt="Lapid Studio" style={{ height: '110px', width: 'auto', display: 'block', marginBottom: '20px' }} />
             <p className="text-sm text-white/40 leading-relaxed mb-6 max-w-xs">
               A plataforma de gestão feita exclusivamente para studios de piercing e estética. CRM, Agendamento, PDV, Financeiro e muito mais — em um único sistema.
             </p>

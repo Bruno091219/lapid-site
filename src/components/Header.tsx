@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { DiamondLogo } from './DiamondLogo';
 
 const navLinks = [
   { label: 'Funcionalidades', href: '#funcionalidades' },
@@ -32,7 +31,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <DiamondLogo size={34} />
+            <img src="/lapid-logo-horizontal.svg" alt="Lapid Studio" style={{ height: '38px', width: 'auto', display: 'block' }} />
           </a>
 
           {/* Desktop nav */}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="60" viewBox="0 0 300 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Diamond 26×52 via nested viewport preserving original geometry -->
+  <svg x="2" y="4" width="26" height="52" viewBox="0 0 40 40">
+    <defs>
+      <linearGradient id="ha" x1="4" y1="2" x2="36" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#9D7147"/>
+        <stop offset="1" stop-color="#6B4E2F"/>
+      </linearGradient>
+      <linearGradient id="hb" x1="8" y1="7" x2="32" y2="33" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#BEA885"/>
+        <stop offset="1" stop-color="#9D7147"/>
+      </linearGradient>
+      <linearGradient id="hc" x1="14" y1="14" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#D4B896"/>
+        <stop offset="1" stop-color="#BEA885"/>
+      </linearGradient>
+    </defs>
+    <path d="M20 2L36 12V28L20 38L4 28V12L20 2Z" fill="url(#ha)" opacity="0.9"/>
+    <path d="M20 7L32 15V25L20 33L8 25V15L20 7Z" fill="url(#hb)" opacity="0.7"/>
+    <path d="M20 11L26 16L20 14L14 16Z" fill="rgb(250,250,248)" fill-opacity="0.6"/>
+    <path d="M14 16L20 14L26 16L20 26Z" fill="url(#hc)"/>
+    <path d="M20 13L21.5 15.5L20 15L18.5 15.5Z" fill="rgb(250,250,248)" fill-opacity="0.9"/>
+  </svg>
+  <!-- LAPID -->
+  <text
+    x="40" y="30"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="30"
+    font-weight="700"
+    letter-spacing="4"
+    fill="#9D7147"
+    dominant-baseline="middle"
+  >LAPID</text>
+  <!-- Studio -->
+  <text
+    x="185" y="30"
+    font-family="Inter, -apple-system, 'Segoe UI', system-ui, sans-serif"
+    font-size="22"
+    font-weight="300"
+    letter-spacing="5"
+    fill="#BEA885"
+    fill-opacity="0.75"
+    dominant-baseline="middle"
+  >Studio</text>
+</svg>
