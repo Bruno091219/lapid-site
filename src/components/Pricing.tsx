@@ -91,11 +91,11 @@ export function Pricing() {
             <DiamondDecor size={14} />
             Planos e preços
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-5">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
             Invista no seu studio.
             <span className="gold-text block">Não em dez ferramentas.</span>
           </h2>
-          <p className="text-lg text-white/50 mb-3">
+          <p className="text-lg text-stone-500 mb-3">
             Todos os planos incluem 7 dias de teste gratuito. Sem cartão de crédito.
           </p>
         </div>
@@ -120,7 +120,7 @@ export function Pricing() {
               }`}
               style={{
                 transitionDelay: `${i * 0.12}s`,
-                background: plan.highlight ? 'rgba(157,113,71,0.08)' : undefined,
+                background: plan.highlight ? 'rgba(28,24,20,0.97)' : undefined,
                 transform: plan.highlight ? 'scale(1.02)' : undefined,
               }}
             >
@@ -191,7 +191,7 @@ export function Pricing() {
 
         {/* Trust footnote */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-white/30">
+          <p className="text-sm text-stone-400">
             Cancelamento a qualquer momento · Suporte via WhatsApp · Migração de dados gratuita · Dados criptografados
           </p>
         </div>

@@ -74,11 +74,11 @@ export function Differentials() {
             <DiamondDecor size={14} />
             Por que a Lapid
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-5">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
             O que a gente faz
             <span className="gold-text block">que mais ninguém faz.</span>
           </h2>
-          <p className="text-lg text-white/50">
+          <p className="text-lg text-stone-500">
             Existem dezenas de sistemas de gestão. Nenhum foi construído para a realidade de um studio de piercing com a profundidade que a Lapid oferece.
           </p>
         </div>

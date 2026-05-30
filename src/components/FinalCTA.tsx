@@ -36,15 +36,15 @@ export function FinalCTA() {
 
         {/* Headline */}
         <h2 className="text-5xl lg:text-6xl font-black tracking-tight mb-6 leading-[1.05]">
-          <span className="text-white">Seu studio pode ser</span>
+          <span className="text-stone-900">Seu studio pode ser</span>
           <br />
           <span className="gold-text">um negócio de verdade.</span>
           <br />
-          <span className="text-white/40">Comece hoje.</span>
+          <span className="text-stone-400">Comece hoje.</span>
         </h2>
 
         {/* Subheadline */}
-        <p className="text-xl text-white/55 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-stone-600 mb-10 max-w-2xl mx-auto leading-relaxed">
           Cada semana que passa sem a Lapid é mais uma semana de confirmações perdidas no WhatsApp, leads esquecidos e dinheiro indo embora sem você ver.
         </p>
 
@@ -60,7 +60,7 @@ export function FinalCTA() {
         </div>
 
         {/* Trust signals */}
-        <div className="flex flex-wrap justify-center gap-6 text-sm text-white/30">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-stone-400">
           <div className="flex items-center gap-1.5">
             <DiamondDecor size={10} className="opacity-60" />
             <span>Setup em menos de 1 hora</span>

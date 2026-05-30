@@ -43,12 +43,12 @@ export function Solution() {
               <DiamondDecor size={14} />
               A solução
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-6">
               Cada dor tem
               <span className="gold-text block">uma resposta</span>
-              <span className="text-white/30 block">precisa.</span>
+              <span className="text-stone-400 block">precisa.</span>
             </h2>
-            <p className="text-lg text-white/50 leading-relaxed mb-8">
+            <p className="text-lg text-stone-500 leading-relaxed mb-8">
               A Lapid não é mais um app genérico. É uma plataforma construída do zero para a realidade de quem trabalha com piercing e estética — com todas as particularidades do segmento resolvidas dentro de um único sistema.
             </p>
             <a href="#planos" className="btn-gold inline-flex">

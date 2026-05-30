@@ -61,11 +61,11 @@ export function FAQ() {
             <DiamondDecor size={14} />
             Perguntas frequentes
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-4">
             Suas dúvidas,
             <span className="gold-text block">respondidas.</span>
           </h2>
-          <p className="text-white/50">
+          <p className="text-stone-500">
             Se não encontrar o que precisa, nossa equipe responde via WhatsApp em até 2 horas.
           </p>
         </div>
@@ -80,7 +80,7 @@ export function FAQ() {
                 className={`reveal rounded-xl border transition-all duration-300 overflow-hidden ${
                   isOpen
                     ? 'border-gold-600/40 bg-gold-600/5'
-                    : 'border-white/7 bg-white/[0.025] hover:border-white/12'
+                    : 'border-stone-200 bg-stone-50/60 hover:border-stone-300'
                 }`}
                 style={{ transitionDelay: `${Math.floor(i / 2) * 0.08}s` }}
               >
@@ -88,7 +88,7 @@ export function FAQ() {
                   className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                 >
-                  <span className={`text-sm font-semibold leading-snug ${isOpen ? 'text-white' : 'text-white/80'}`}>
+                  <span className={`text-sm font-semibold leading-snug ${isOpen ? 'text-white' : 'text-stone-800'}`}>
                     {faq.question}
                   </span>
                   <div
@@ -96,16 +96,16 @@ export function FAQ() {
                       isOpen ? 'rotate-180' : ''
                     }`}
                     style={{
-                      background: isOpen ? 'rgba(157,113,71,0.2)' : 'rgba(255,255,255,0.06)',
-                      border: isOpen ? '1px solid rgba(157,113,71,0.3)' : '1px solid rgba(255,255,255,0.08)',
+                      background: isOpen ? 'rgba(157,113,71,0.2)' : 'rgba(0,0,0,0.06)',
+                      border: isOpen ? '1px solid rgba(157,113,71,0.3)' : '1px solid rgba(0,0,0,0.1)',
                     }}
                   >
-                    <ChevronDown size={14} className={isOpen ? 'text-gold-400' : 'text-white/40'} />
+                    <ChevronDown size={14} className={isOpen ? 'text-gold-400' : 'text-stone-500'} />
                   </div>
                 </button>
                 {isOpen && (
                   <div className="px-6 pb-5">
-                    <p className="text-sm text-white/55 leading-relaxed">{faq.answer}</p>
+                    <p className="text-sm text-stone-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 )}
               </div>

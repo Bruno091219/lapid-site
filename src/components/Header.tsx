@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'Funcionalidades', href: '#funcionalidades' },
-  { label: 'Diferenciais', href: '#diferenciais' },
+  { label: 'Por que a Lapid', href: '#por-que-lapid' },
   { label: 'Planos', href: '#planos' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'FAQ', href: '#faq' },
@@ -23,7 +23,7 @@ export function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-onyx/95 backdrop-blur-xl border-b border-white/5 py-3'
+          ? 'bg-[#FAF9F7]/98 backdrop-blur-xl border-b border-stone-200 py-3'
           : 'bg-transparent py-5'
       }`}
     >
@@ -40,7 +40,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/60 hover:text-white transition-colors duration-200"
+                className="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -59,7 +59,7 @@ export function Header() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-white/70 hover:text-white"
+            className="md:hidden p-2 text-stone-600 hover:text-stone-900"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
@@ -70,19 +70,19 @@ export function Header() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-white/5 bg-onyx/98 backdrop-blur-xl">
+        <div className="md:hidden border-t border-stone-200 bg-[#FAF9F7]/98 backdrop-blur-xl">
           <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-white/70 hover:text-white transition-colors"
+                className="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <div className="flex flex-col gap-3 pt-4 border-t border-white/5">
+            <div className="flex flex-col gap-3 pt-4 border-t border-stone-200">
               <a href="#planos" className="btn-ghost w-full justify-center" onClick={() => setMenuOpen(false)}>
                 Entrar
               </a>

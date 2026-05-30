@@ -78,11 +78,11 @@ export function Testimonials() {
             <DiamondDecor size={14} />
             Depoimentos
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-5">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
             Studios que
             <span className="gold-text block">cresceram com a Lapid.</span>
           </h2>
-          <p className="text-white/50">
+          <p className="text-stone-500">
             Resultados reais de proprietários que pararam de adivinhar e começaram a decidir com dados.
           </p>
         </div>
@@ -143,7 +143,7 @@ export function Testimonials() {
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-3xl font-black gold-text mb-1">{stat.value}</div>
-              <div className="text-sm text-white/40">{stat.label}</div>
+              <div className="text-sm text-stone-500">{stat.label}</div>
             </div>
           ))}
         </div>

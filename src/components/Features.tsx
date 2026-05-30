@@ -102,11 +102,11 @@ export function Features() {
             <DiamondDecor size={14} />
             Módulos completos
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-5">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
             Tudo que seu studio precisa,
             <span className="gold-text block">em um só lugar.</span>
           </h2>
-          <p className="text-lg text-white/50">
+          <p className="text-lg text-stone-500">
             Cada módulo foi construído pensando nas especificidades do segmento de piercing e estética — não é um sistema genérico adaptado.
           </p>
         </div>

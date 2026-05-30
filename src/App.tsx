@@ -5,6 +5,7 @@ import { Problem } from './components/Problem';
 import { Solution } from './components/Solution';
 import { Features } from './components/Features';
 import { Differentials } from './components/Differentials';
+import { UniqueFeatures } from './components/UniqueFeatures';
 import { HowItWorks } from './components/HowItWorks';
 import { Pricing } from './components/Pricing';
 import { Testimonials } from './components/Testimonials';
@@ -33,13 +34,14 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-onyx text-cream overflow-x-hidden">
+    <div className="min-h-screen bg-[#FAF9F7] text-stone-900 overflow-x-hidden">
       <Header />
       <main>
         <Hero />
         <Problem />
         <Solution />
         <Features />
+        <UniqueFeatures />
         <Differentials />
         <HowItWorks />
         <Pricing />

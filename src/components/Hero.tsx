@@ -32,18 +32,18 @@ export function Hero() {
 
             {/* Headline */}
             <h1 className="text-5xl lg:text-6xl font-black leading-[1.05] tracking-tight mb-6">
-              <span className="text-white">Seu studio no</span>
+              <span className="text-stone-900">Seu studio no</span>
               <br />
               <span className="gold-text">próximo nível.</span>
               <br />
-              <span className="text-white">Sem planilha.</span>
+              <span className="text-stone-900">Sem planilha.</span>
               <br />
-              <span className="text-white/50">Sem caos.</span>
+              <span className="text-stone-400">Sem caos.</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg text-white/60 leading-relaxed mb-8 max-w-xl">
-              A <strong className="text-white/90">única plataforma</strong> feita para studios de piercing e estética — com CRM inteligente, agendamento sincronizado com Google Calendar, PDV completo, anamnese digital e pós-atendimento automatizado.
+            <p className="text-lg text-stone-600 leading-relaxed mb-8 max-w-xl">
+              A <strong className="text-stone-900">única plataforma</strong> feita para studios de piercing e estética — com CRM inteligente, agendamento sincronizado com Google Calendar, PDV completo, anamnese digital e pós-atendimento automatizado.
             </p>
 
             {/* CTAs */}
@@ -65,8 +65,8 @@ export function Hero() {
                   <Users size={14} className="text-gold-400" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-white">+12.000</div>
-                  <div className="text-xs text-white/40">clientes gerenciados</div>
+                  <div className="text-sm font-bold text-stone-900">+12.000</div>
+                  <div className="text-xs text-stone-500">clientes gerenciados</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -74,8 +74,8 @@ export function Hero() {
                   <Calendar size={14} className="text-gold-400" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-white">+45.000</div>
-                  <div className="text-xs text-white/40">agendamentos realizados</div>
+                  <div className="text-sm font-bold text-stone-900">+45.000</div>
+                  <div className="text-xs text-stone-500">agendamentos realizados</div>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -83,8 +83,8 @@ export function Hero() {
                   <TrendingUp size={14} className="text-gold-400" />
                 </div>
                 <div>
-                  <div className="text-sm font-bold text-white">+37%</div>
-                  <div className="text-xs text-white/40">aumento médio de faturamento</div>
+                  <div className="text-sm font-bold text-stone-900">+37%</div>
+                  <div className="text-xs text-stone-500">aumento médio de faturamento</div>
                 </div>
               </div>
             </div>

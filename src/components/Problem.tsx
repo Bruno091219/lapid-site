@@ -53,11 +53,11 @@ export function Problem() {
             <DiamondDecor size={14} />
             O problema real
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-6">
             Gerir um studio de piercing
-            <span className="block text-white/30">não é pra amadores.</span>
+            <span className="block text-stone-400">não é pra amadores.</span>
           </h2>
-          <p className="text-lg text-white/50 leading-relaxed">
+          <p className="text-lg text-stone-500 leading-relaxed">
             A maioria dos studios opera no caos — e chama isso de "rotina". Enquanto isso, dinheiro escorrega, clientes somem e o dono trabalha 12h por dia sem ver crescimento real.
           </p>
         </div>
@@ -90,7 +90,7 @@ export function Problem() {
 
         {/* Transition phrase */}
         <div className="mt-16 text-center">
-          <p className="text-xl text-white/40">
+          <p className="text-xl text-stone-500">
             Tudo isso tem solução. E cabe em uma única plataforma.
           </p>
           <div className="mt-4 flex justify-center">

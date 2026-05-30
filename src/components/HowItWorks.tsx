@@ -39,11 +39,11 @@ export function HowItWorks() {
             <DiamondDecor size={14} />
             Como funciona
           </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white mb-5">
+          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
             Três passos para
             <span className="gold-text block">transformar seu studio.</span>
           </h2>
-          <p className="text-white/50 text-lg">
+          <p className="text-stone-500 text-lg">
             Não precisa de técnico, não precisa de treinamento longo. Em menos de uma hora seu studio está operando.
           </p>
         </div>
@@ -86,8 +86,8 @@ export function HowItWorks() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                  <p className="text-sm text-white/50 leading-relaxed mb-4">{step.description}</p>
+                  <h3 className="text-xl font-bold text-stone-900 mb-3">{step.title}</h3>
+                  <p className="text-sm text-stone-500 leading-relaxed mb-4">{step.description}</p>
                   <p className="text-xs text-gold-400/80 font-medium italic">✦ {step.detail}</p>
                 </div>
               );
@@ -100,7 +100,7 @@ export function HowItWorks() {
           <a href="#planos" className="btn-gold px-8 py-4 text-base inline-flex">
             Começar agora — grátis por 7 dias
           </a>
-          <p className="mt-3 text-xs text-white/30">Sem cartão de crédito · Cancele quando quiser</p>
+          <p className="mt-3 text-xs text-stone-400">Sem cartão de crédito · Cancele quando quiser</p>
         </div>
       </div>
     </section>
