@@ -49,10 +49,10 @@ export function Header() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="#planos" className="btn-ghost text-sm">
+            <a href="https://app.lapid.com.br/auth" className="btn-ghost text-sm">
               Entrar
             </a>
-            <a href="#planos" className="btn-gold text-sm">
+            <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold text-sm">
               Testar grátis
             </a>
           </div>
@@ -83,11 +83,11 @@ export function Header() {
               </a>
             ))}
             <div className="flex flex-col gap-3 pt-4 border-t border-stone-200">
-              <a href="#planos" className="btn-ghost w-full justify-center" onClick={() => setMenuOpen(false)}>
+              <a href="https://app.lapid.com.br/auth" className="btn-ghost w-full justify-center" onClick={() => setMenuOpen(false)}>
                 Entrar
               </a>
-              <a href="#planos" className="btn-gold w-full justify-center" onClick={() => setMenuOpen(false)}>
-                Testar grátis — 7 dias
+              <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold w-full justify-center" onClick={() => setMenuOpen(false)}>
+                Testar grátis — 15 dias
               </a>
             </div>
           </div>

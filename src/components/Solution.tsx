@@ -51,7 +51,7 @@ export function Solution() {
             <p className="text-lg text-stone-500 leading-relaxed mb-8">
               A Lapid não é mais um app genérico. É uma plataforma construída do zero para a realidade de quem trabalha com piercing e estética — com todas as particularidades do segmento resolvidas dentro de um único sistema.
             </p>
-            <a href="#planos" className="btn-gold inline-flex">
+            <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold inline-flex">
               Começar agora
               <ArrowRight size={15} />
             </a>

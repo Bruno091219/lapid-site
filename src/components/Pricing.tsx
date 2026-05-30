@@ -1,74 +1,87 @@
 import { Check, X, ArrowRight } from 'lucide-react';
 import { DiamondDecor } from './DiamondLogo';
 
+const SIGNUP_URL = 'https://app.lapid.com.br/auth?signup=true';
+
 const plans = [
-  {
-    id: 'solo',
-    name: 'CRM Solo',
-    price: 97,
-    period: 'mês',
-    tagline: 'Para quem trabalha sozinho e quer organizar o funil de vendas.',
-    highlight: false,
-    badge: null,
-    features: [
-      { label: '1 usuário (você)', included: true },
-      { label: 'CRM com Kanban e automações', included: true },
-      { label: 'Gestão de leads e clientes', included: true },
-      { label: 'Inbox WhatsApp integrado', included: true },
-      { label: 'Anamnese digital', included: true },
-      { label: 'Agendamento básico', included: true },
-      { label: 'PDV e controle financeiro', included: false },
-      { label: 'Múltiplos profissionais', included: false },
-      { label: 'Google Calendar sync', included: false },
-      { label: 'Analytics avançado', included: false },
-    ],
-    cta: 'Começar com CRM Solo',
-    ctaStyle: 'ghost',
-  },
   {
     id: 'essencial',
     name: 'Studio Essencial',
-    price: 197,
+    price: 127,
     period: 'mês',
-    tagline: 'Para studios em crescimento com equipe e gestão estruturada.',
-    highlight: true,
-    badge: 'Mais popular',
+    users: 'Até 2 usuários',
+    tagline: 'Para studios que precisam de gestão completa do dia a dia.',
+    highlight: false,
+    badge: null,
     features: [
-      { label: 'Até 5 usuários', included: true },
-      { label: 'CRM com Kanban e automações', included: true },
-      { label: 'Gestão de leads e clientes', included: true },
-      { label: 'Inbox WhatsApp integrado', included: true },
-      { label: 'Anamnese digital', included: true },
-      { label: 'Agendamento + Google Calendar', included: true },
-      { label: 'PDV + controle de caixa', included: true },
-      { label: 'Financeiro completo (DRE, metas)', included: true },
-      { label: 'Pós-atendimento e follow-up', included: true },
-      { label: 'Analytics avançado', included: false },
+      { label: 'Até 2 usuários', included: true },
+      { label: 'Dashboard financeiro', included: true },
+      { label: 'Agendamento completo', included: true },
+      { label: 'Clientes com histórico completo', included: true },
+      { label: 'PDV com atendimento simultâneo', included: true },
+      { label: 'Controle financeiro', included: true },
+      { label: 'Gestão de Produtos', included: true },
+      { label: 'Pós-Atendimento automatizado', included: true },
+      { label: 'Anamnese Digital', included: true },
+      { label: 'CRM e Pipeline de vendas', included: false },
+      { label: 'WhatsApp integrado nativo', included: false },
+      { label: 'Lapid Analytics', included: false },
+      { label: 'Página pública no Instagram', included: false },
     ],
     cta: 'Testar Studio Essencial',
-    ctaStyle: 'gold',
+    ctaStyle: 'ghost',
   },
   {
     id: 'completo',
     name: 'Studio Completo',
-    price: 297,
+    price: 167,
     period: 'mês',
-    tagline: 'Para studios que querem dominar o mercado com dados e automação total.',
-    highlight: false,
-    badge: 'Acesso total',
+    users: 'Até 5 usuários',
+    tagline: 'Para studios que querem crescer com CRM, WhatsApp e Analytics.',
+    highlight: true,
+    badge: 'Mais popular',
     features: [
-      { label: 'Usuários ilimitados', included: true },
+      { label: 'Até 5 usuários', included: true },
+      { label: 'Dashboard financeiro', included: true },
+      { label: 'Agendamento completo', included: true },
+      { label: 'Clientes com histórico completo', included: true },
+      { label: 'PDV com atendimento simultâneo', included: true },
+      { label: 'Controle financeiro', included: true },
+      { label: 'Gestão de Produtos', included: true },
+      { label: 'Pós-Atendimento automatizado', included: true },
+      { label: 'Anamnese Digital', included: true },
       { label: 'CRM com Kanban e automações', included: true },
-      { label: 'Gestão de leads e clientes', included: true },
-      { label: 'Inbox WhatsApp integrado', included: true },
-      { label: 'Anamnese digital', included: true },
-      { label: 'Agendamento + Google Calendar', included: true },
-      { label: 'PDV + controle de caixa', included: true },
-      { label: 'Financeiro completo (DRE, metas)', included: true },
-      { label: 'Pós-atendimento e follow-up', included: true },
+      { label: 'WhatsApp integrado nativo', included: true },
       { label: 'Lapid Analytics (CAC, ROI, funil)', included: true },
+      { label: 'Página pública no Instagram', included: true },
     ],
     cta: 'Testar Studio Completo',
+    ctaStyle: 'gold',
+  },
+  {
+    id: 'crm-pro',
+    name: 'CRM Pro',
+    price: 97,
+    period: 'mês',
+    users: 'Até 2 usuários',
+    tagline: 'Para quem foca em vendas, leads e relacionamento com clientes.',
+    highlight: false,
+    badge: null,
+    features: [
+      { label: 'Até 2 usuários', included: true },
+      { label: 'CRM completo com Kanban', included: true },
+      { label: 'Pipeline de vendas', included: true },
+      { label: 'WhatsApp integrado nativo', included: true },
+      { label: 'Agendamento', included: true },
+      { label: 'Cadastro de clientes', included: true },
+      { label: 'PDV e controle financeiro', included: false },
+      { label: 'Gestão de Produtos', included: false },
+      { label: 'Pós-Atendimento automatizado', included: false },
+      { label: 'Anamnese Digital', included: false },
+      { label: 'Lapid Analytics', included: false },
+      { label: 'Página pública no Instagram', included: false },
+    ],
+    cta: 'Começar com CRM Pro',
     ctaStyle: 'ghost',
   },
 ];
@@ -96,15 +109,15 @@ export function Pricing() {
             <span className="gold-text block">Não em dez ferramentas.</span>
           </h2>
           <p className="text-lg text-stone-500 mb-3">
-            Todos os planos incluem 7 dias de teste gratuito. Sem cartão de crédito.
+            Todos os planos incluem <strong className="text-stone-700">15 dias de teste gratuito</strong>. Sem cartão de crédito.
           </p>
         </div>
 
-        {/* Annual discount badge */}
+        {/* Trial badge */}
         <div className="flex justify-center mb-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-600/30 bg-gold-600/8">
             <DiamondDecor size={12} />
-            <span className="text-xs font-medium text-gold-300">Planos anuais com 2 meses grátis — fale com a gente</span>
+            <span className="text-xs font-medium text-gold-300">15 dias grátis · Sem cartão · Cancele quando quiser</span>
           </div>
         </div>
 
@@ -146,11 +159,12 @@ export function Pricing() {
                   <span className="text-5xl font-black text-white leading-none">{plan.price}</span>
                   <span className="text-sm text-white/40 mb-1">/{plan.period}</span>
                 </div>
+                <div className="mt-2 text-xs text-white/35 font-medium">{plan.users}</div>
               </div>
 
               {/* CTA */}
               <a
-                href="#"
+                href={SIGNUP_URL}
                 className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm mb-6 transition-all duration-200 ${
                   plan.ctaStyle === 'gold' ? 'btn-gold' : 'btn-ghost'
                 }`}
@@ -166,9 +180,8 @@ export function Pricing() {
               <div className="flex flex-col gap-3">
                 {plan.features.map((feature) => (
                   <div key={feature.label} className="flex items-center gap-3">
-                    <div className={`shrink-0 w-4 h-4 rounded-full flex items-center justify-center ${
-                      feature.included ? '' : ''
-                    }`}
+                    <div
+                      className="shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
                       style={{
                         background: feature.included ? 'rgba(157,113,71,0.2)' : 'rgba(255,255,255,0.04)',
                         border: feature.included ? '1px solid rgba(157,113,71,0.4)' : '1px solid rgba(255,255,255,0.1)',

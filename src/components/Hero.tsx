@@ -48,8 +48,8 @@ export function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-10">
-              <a href="#planos" className="btn-gold px-8 py-4 text-base">
-                Testar grátis por 7 dias
+              <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold px-8 py-4 text-base">
+                Testar grátis por 15 dias
                 <ArrowRight size={16} />
               </a>
               <a href="#funcionalidades" className="btn-ghost px-8 py-4 text-base group">

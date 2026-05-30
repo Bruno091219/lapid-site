@@ -30,7 +30,7 @@ export function FinalCTA() {
         <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-gold-600/30 bg-gold-600/8">
           <Clock size={12} className="text-gold-400" />
           <span className="text-xs font-medium text-gold-300">
-            7 dias gratuitos · Sem cartão de crédito · Cancele quando quiser
+            15 dias gratuitos · Sem cartão de crédito · Cancele quando quiser
           </span>
         </div>
 
@@ -50,8 +50,8 @@ export function FinalCTA() {
 
         {/* CTAs */}
         <div className="flex flex-wrap justify-center gap-4 mb-10">
-          <a href="#planos" className="btn-gold px-10 py-4 text-lg">
-            Testar grátis por 7 dias
+          <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold px-10 py-4 text-lg">
+            Testar grátis por 15 dias
             <ArrowRight size={18} />
           </a>
           <a href="https://wa.me/5511999999999" className="btn-ghost px-10 py-4 text-lg">

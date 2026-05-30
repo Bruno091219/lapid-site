@@ -97,8 +97,8 @@ export function HowItWorks() {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <a href="#planos" className="btn-gold px-8 py-4 text-base inline-flex">
-            Começar agora — grátis por 7 dias
+          <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold px-8 py-4 text-base inline-flex">
+            Começar agora — grátis por 15 dias
           </a>
           <p className="mt-3 text-xs text-stone-400">Sem cartão de crédito · Cancele quando quiser</p>
         </div>

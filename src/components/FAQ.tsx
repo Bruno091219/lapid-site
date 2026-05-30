@@ -32,7 +32,7 @@ const faqs = [
     answer: 'Seus dados são armazenados em banco de dados PostgreSQL hospedado na Supabase com criptografia em trânsito e em repouso. Você pode exportar sua base de clientes, histórico de vendas e qualquer dado a qualquer momento. Seus dados são seus — sempre.',
   },
   {
-    question: 'O que acontece depois dos 7 dias de teste?',
+    question: 'O que acontece depois dos 15 dias de teste?',
     answer: 'Após o período de teste, você escolhe o plano e insere os dados de pagamento. Se não assinar, a conta entra em modo de leitura por 7 dias adicionais para você exportar seus dados. Não cobramos nada automaticamente sem sua confirmação.',
   },
   {

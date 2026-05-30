@@ -196,8 +196,8 @@ export function UniqueFeatures() {
             Esses recursos só existem porque a Lapid foi construída do zero para o segmento de piercing.
             <span className="text-stone-700 font-semibold"> Não é adaptação. É especialização.</span>
           </p>
-          <a href="#planos" className="btn-gold px-8 py-4 text-base inline-flex items-center gap-2">
-            Testar grátis por 7 dias
+          <a href="https://app.lapid.com.br/auth?signup=true" className="btn-gold px-8 py-4 text-base inline-flex items-center gap-2">
+            Testar grátis por 15 dias
           </a>
         </div>
       </div>
