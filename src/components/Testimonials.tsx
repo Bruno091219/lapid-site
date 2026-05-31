@@ -1,152 +1,136 @@
-import { Star } from 'lucide-react';
-import { DiamondDecor } from './DiamondLogo';
+const GOLD_GRADIENT = 'linear-gradient(135deg, #9D7147 0%, #BEA885 100%)';
 
 const testimonials = [
   {
-    name: 'Camila Torres',
-    role: 'Proprietária',
-    studio: 'Ink & Skin Studio — São Paulo, SP',
-    avatar: 'CT',
-    color: '#9D7147',
-    stars: 5,
-    text: 'Antes da Lapid, eu perdia confirmações no WhatsApp toda semana. Agora o sistema confirma os agendamentos sozinho e eu só olho o que foi confirmado. Em 3 meses reduzi o no-show de 30% para 8%.',
-    highlight: 'Reduziu no-show de 30% para 8%',
+    initials: 'CM',
+    name: 'Carla Mendes',
+    role: 'Studio Black Needle',
+    city: 'São Paulo, SP',
+    quote: 'Antes perdia uns 30% dos agendamentos por esquecimento ou confusão no WhatsApp. Com a Lapid, os clientes confirmam sozinhos — o no-show caiu mais de 40% no primeiro mês.',
+    result: '↓ 40% no-show',
+    resultColor: '#10B981',
   },
   {
-    name: 'Rafael Mendes',
-    role: 'Piercer e gestor',
-    studio: 'Studio Black Needle — Curitiba, PR',
-    avatar: 'RM',
-    color: '#5BA48A',
-    stars: 5,
-    text: 'O módulo financeiro mudou tudo. Eu nunca sabia quanto estava ganhando de verdade. Agora tenho DRE, fluxo de caixa e até a comissão de cada profissional calculada automaticamente. Descobri que dois serviços davam prejuízo.',
-    highlight: 'Descobriu serviços que davam prejuízo',
+    initials: 'RS',
+    name: 'Rafael Santos',
+    role: 'Santos Ink Studio',
+    city: 'Porto Alegre, RS',
+    quote: 'Em 3 meses o faturamento cresceu 28%. Não porque atendi mais clientes — atendi os mesmos. O PDV me mostrou que eu cobrava errado em várias joias e eu nem sabia.',
+    result: '↑ 28% faturamento',
+    resultColor: '#9D7147',
   },
   {
-    name: 'Beatriz Almeida',
-    role: 'Fundadora',
-    studio: 'Aura Piercing Studio — Rio de Janeiro, RJ',
-    avatar: 'BA',
-    color: '#7C6FBF',
-    stars: 5,
-    text: 'A anamnese digital foi o que me convenceu a assinar. Eu tinha pavor de processo por falta de documento assinado. Agora cada cliente assina no tablet, fica salvo com data e IP, e eu exporto em PDF se precisar.',
-    highlight: 'Zero risco jurídico com anamnese digital',
-  },
-  {
-    name: 'Lucas Oliveira',
-    role: 'Dono e piercer',
-    studio: 'Golden Gauge — Belo Horizonte, MG',
-    avatar: 'LO',
-    color: '#D4A853',
-    stars: 5,
-    text: 'Uso o CRM toda semana para acompanhar quem está chegando pelo Instagram. Monto o funil, vejo quantos converteram e comparo com o que gastei em anúncio. Aumentei meu ROI em 40% cortando canal que não funcionava.',
-    highlight: '+40% ROI em marketing com dados reais',
-  },
-  {
-    name: 'Fernanda Costa',
-    role: 'Gestora comercial',
-    studio: 'Piercing Luxe — Florianópolis, SC',
-    avatar: 'FC',
-    color: '#C47E9A',
-    stars: 5,
-    text: 'Nossa equipe tem 6 pessoas e antes cada um anotava as coisas de um jeito diferente. A Lapid padronizou tudo. Agenda, caixa, follow-up — tudo no mesmo sistema, em tempo real. Atendimento ficou muito mais profissional.',
-    highlight: 'Padronizou equipe de 6 pessoas',
-  },
-  {
-    name: 'Diego Santos',
-    role: 'Piercer autônomo',
-    studio: 'Studio DS — Porto Alegre, RS',
-    avatar: 'DS',
-    color: '#4B9CD3',
-    stars: 5,
-    text: 'Comecei com o plano Solo e me pagou no primeiro mês. Recuperei 4 leads que eu tinha perdido no WhatsApp com a automação de follow-up. São R$97 que viraram R$1.200 em vendas que eu não teria feito.',
-    highlight: 'R$97 de investimento → R$1.200 em vendas',
+    initials: 'AO',
+    name: 'Amanda Oliveira',
+    role: 'Aurum Piercing',
+    city: 'Belo Horizonte, MG',
+    quote: 'Economizo pelo menos 2 horas por dia. Não preciso mais responder "qual horário disponível" no WhatsApp, a anamnese já vem preenchida e o financeiro fecha sozinho.',
+    result: '−2h por dia',
+    resultColor: '#3B82F6',
   },
 ];
 
 export function Testimonials() {
   return (
-    <section className="py-24 relative overflow-hidden" id="depoimentos">
-      <div className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(157,113,71,0.2) 30%, rgba(157,113,71,0.2) 70%, transparent)' }}
-      />
+    <section style={{ padding: '120px 0', background: '#F3F0EA' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center max-w-xl mx-auto mb-16">
-          <div className="section-label justify-center mb-4">
-            <DiamondDecor size={14} />
+        <div className="reveal" style={{ textAlign: 'center', marginBottom: '64px' }}>
+          <span
+            style={{
+              fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
+              textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '16px',
+            }}
+          >
             Depoimentos
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
-            Studios que
-            <span className="gold-text block">cresceram com a Lapid.</span>
+          </span>
+          <h2
+            style={{
+              fontSize: 'clamp(32px, 4vw, 56px)',
+              fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1.08,
+              color: '#0A0A0A', margin: '0 0 12px',
+            }}
+          >
+            Quem usa, aprova.
           </h2>
-          <p className="text-stone-500">
-            Resultados reais de proprietários que pararam de adivinhar e começaram a decidir com dados.
+          <p style={{ fontSize: '18px', color: '#6B6B6B', fontWeight: 400, letterSpacing: '-0.01em', margin: 0 }}>
+            200+ studios transformaram sua gestão com a Lapid.
           </p>
         </div>
 
-        {/* Testimonials grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div
-              key={i}
-              className="reveal card-dark p-6 flex flex-col transition-all duration-300 hover:border-gold-600/25"
-              style={{ transitionDelay: `${i * 0.08}s` }}
+              key={t.name}
+              className={`reveal reveal-delay-${i + 1}`}
+              style={{
+                background: '#FFFFFF',
+                border: '1px solid rgba(0,0,0,0.07)',
+                borderRadius: '20px',
+                padding: '32px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '20px',
+              }}
             >
-              {/* Stars */}
-              <div className="flex gap-0.5 mb-4">
-                {[...Array(t.stars)].map((_, j) => (
-                  <Star key={j} size={13} className="fill-gold-500 text-gold-500" />
-                ))}
+              {/* Result badge */}
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignSelf: 'flex-start',
+                  padding: '5px 12px',
+                  borderRadius: '980px',
+                  background: `${t.resultColor}18`,
+                  border: `1px solid ${t.resultColor}35`,
+                  fontSize: '13px', fontWeight: 700, color: t.resultColor,
+                  letterSpacing: '-0.01em',
+                }}
+              >
+                {t.result}
               </div>
 
-              {/* Highlight badge */}
-              <div className="inline-flex items-center gap-1.5 mb-4 px-2.5 py-1 rounded-lg self-start"
-                style={{ background: `${t.color}14`, border: `1px solid ${t.color}25` }}>
-                <div className="w-1.5 h-1.5 rounded-full" style={{ background: t.color }} />
-                <span className="text-[10px] font-semibold" style={{ color: t.color }}>
-                  {t.highlight}
-                </span>
-              </div>
-
-              {/* Testimonial text */}
-              <p className="text-sm text-white/60 leading-relaxed flex-1 mb-6 italic">
-                "{t.text}"
+              {/* Quote */}
+              <p
+                style={{
+                  fontSize: '16px', color: '#3A3A3A', lineHeight: 1.65,
+                  fontWeight: 400, margin: 0, flex: 1,
+                  letterSpacing: '-0.01em',
+                }}
+              >
+                "{t.quote}"
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-white/5">
+              <div
+                style={{
+                  display: 'flex', alignItems: 'center', gap: '12px',
+                  paddingTop: '16px', borderTop: '1px solid rgba(0,0,0,0.05)',
+                }}
+              >
                 <div
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold shrink-0"
-                  style={{ background: `${t.color}25`, color: t.color }}
+                  style={{
+                    width: '40px', height: '40px', borderRadius: '50%', flexShrink: 0,
+                    background: GOLD_GRADIENT,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    color: 'white', fontWeight: 700, fontSize: '14px',
+                    letterSpacing: '0.02em',
+                  }}
                 >
-                  {t.avatar}
+                  {t.initials}
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-white">{t.name}</div>
-                  <div className="text-xs text-white/35">{t.studio}</div>
+                  <div style={{ fontSize: '15px', fontWeight: 700, color: '#0A0A0A', letterSpacing: '-0.01em' }}>
+                    {t.name}
+                  </div>
+                  <div style={{ fontSize: '13px', color: '#888', fontWeight: 400 }}>
+                    {t.role} · {t.city}
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Social proof bar */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {[
-            { value: '200+', label: 'Studios ativos' },
-            { value: '4.9/5', label: 'Avaliação média' },
-            { value: '12mil+', label: 'Clientes gerenciados' },
-            { value: '98%', label: 'Taxa de retenção' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl font-black gold-text mb-1">{stat.value}</div>
-              <div className="text-sm text-stone-500">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

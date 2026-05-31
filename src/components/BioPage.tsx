@@ -13,7 +13,6 @@ function IPhoneMockup({ src, alt, offsetTop = false }: { src: string; alt: strin
         marginTop: offsetTop ? '40px' : '0',
       }}
     >
-      {/* Notch */}
       <div
         style={{
           position: 'absolute', top: 0, left: '50%',
@@ -21,7 +20,14 @@ function IPhoneMockup({ src, alt, offsetTop = false }: { src: string; alt: strin
           background: '#1A1A1A', borderRadius: '0 0 14px 14px', zIndex: 10,
         }}
       />
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block' }} />
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        width="390"
+        height="844"
+        style={{ width: '100%', display: 'block' }}
+      />
     </div>
   );
 }
@@ -32,6 +38,21 @@ const checkIcon = (
     <path d="M5.5 9L7.5 11L12.5 6" stroke="#9D7147" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
+
+function IntegrationBadge({ color, bg, label, icon }: { color: string; bg: string; label: string; icon: React.ReactNode }) {
+  return (
+    <span
+      style={{
+        display: 'inline-flex', alignItems: 'center', gap: '5px',
+        padding: '4px 10px', borderRadius: '980px',
+        background: bg, fontSize: '12px', fontWeight: 600, color,
+      }}
+    >
+      {icon}
+      {label}
+    </span>
+  );
+}
 
 export function BioPage() {
   return (
@@ -44,11 +65,37 @@ export function BioPage() {
             <span
               style={{
                 fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
-                textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '20px',
+                textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '12px',
               }}
             >
               Página na bio do Instagram
             </span>
+
+            {/* Integration badges */}
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '20px' }}>
+              <IntegrationBadge
+                color="#E1306C" bg="rgba(225,48,108,0.08)"
+                label="Instagram"
+                icon={
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                }
+              />
+              <IntegrationBadge
+                color="#4285F4" bg="rgba(66,133,244,0.08)"
+                label="Aparece no Google"
+                icon={
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                  </svg>
+                }
+              />
+            </div>
+
             <h2
               style={{
                 fontSize: 'clamp(36px, 4.5vw, 64px)',
@@ -90,11 +137,7 @@ export function BioPage() {
 
           {/* Right — iPhones */}
           <div className="reveal reveal-delay-2">
-            <div
-              style={{
-                display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'flex-start',
-              }}
-            >
+            <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'flex-start' }}>
               <IPhoneMockup src="/screenshots/biotela1.jpeg" alt="Página pública Lapid — tela 1" offsetTop />
               <IPhoneMockup src="/screenshots/biotela2.jpeg" alt="Página pública Lapid — tela 2" />
             </div>

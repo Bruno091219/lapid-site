@@ -40,8 +40,8 @@ export function Header() {
           <img src="/lapid-logo-horizontal.svg" alt="Lapid" style={{ height: '26px', display: 'block' }} />
         </a>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex" style={{ gap: '36px', alignItems: 'center', display: 'flex' }}>
+        {/* Desktop nav — no inline display to avoid conflict with hidden md:flex */}
+        <nav className="hidden md:flex" style={{ gap: '36px', alignItems: 'center' }}>
           {navLinks.map((l) => (
             <a
               key={l.href}
@@ -59,8 +59,8 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Desktop CTAs */}
-        <div className="hidden md:flex" style={{ gap: '10px', alignItems: 'center', display: 'flex' }}>
+        {/* Desktop CTAs — no inline display to avoid conflict with hidden md:flex */}
+        <div className="hidden md:flex" style={{ gap: '10px', alignItems: 'center' }}>
           <a
             href="https://app.lapid.com.br/auth"
             className="btn-ghost"

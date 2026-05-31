@@ -1,5 +1,7 @@
+import type { ReactNode } from 'react';
+
 type Card = {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   title: string;
   description: string;
@@ -41,7 +43,7 @@ const cards: Card[] = [
     ),
     label: 'PDV simultâneo',
     title: 'PDV durante o atendimento',
-    description: 'Cobra joias, procedimentos e produtos enquanto atende — em até 3 clientes simultaneamente. Inicia no celular, finaliza no PC. Envia o cupom online automaticamente pelo WhatsApp, sem precisar imprimir.',
+    description: 'Cobra joias, procedimentos e produtos enquanto atende — em até 3 clientes simultaneamente. Inicia no celular, finaliza no PC. Cupom enviado pelo WhatsApp automaticamente.',
     bullets: [
       'Atendimento simultâneo de até 3 clientes',
       'Cupom digital enviado pelo WhatsApp',
@@ -188,19 +190,18 @@ export function FeatureCards() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 2 colunas no mobile, 3 no desktop */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {cards.map((card, i) => (
             <div
               key={card.label}
-              className="reveal"
+              className={`reveal reveal-delay-${(i % 3) + 1} p-5 lg:p-9`}
               style={{
                 background: '#FFFFFF',
                 border: '1px solid rgba(0,0,0,0.07)',
                 borderRadius: '20px',
-                padding: '36px',
                 transition: 'box-shadow 0.2s ease, transform 0.2s ease',
                 cursor: 'default',
-                transitionDelay: `${(i % 3) * 0.1}s`,
                 display: 'flex',
                 flexDirection: 'column',
               }}
@@ -216,10 +217,10 @@ export function FeatureCards() {
               {/* Icon */}
               <div
                 style={{
-                  width: '48px', height: '48px', borderRadius: '12px',
+                  width: '44px', height: '44px', borderRadius: '12px',
                   background: 'rgba(157,113,71,0.1)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#9D7147', marginBottom: '18px', flexShrink: 0,
+                  color: '#9D7147', marginBottom: '14px', flexShrink: 0,
                 }}
               >
                 {card.icon}
@@ -228,15 +229,15 @@ export function FeatureCards() {
               {/* Title */}
               <h3
                 style={{
-                  fontSize: '18px', fontWeight: 700, letterSpacing: '-0.02em',
-                  color: '#0A0A0A', margin: '0 0 10px',
+                  fontSize: 'clamp(14px, 1.5vw, 18px)', fontWeight: 700, letterSpacing: '-0.02em',
+                  color: '#0A0A0A', margin: '0 0 8px',
                 }}
               >
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p style={{ fontSize: '15px', color: '#6B6B6B', lineHeight: 1.65, margin: 0, fontWeight: 400 }}>
+              <p style={{ fontSize: 'clamp(13px, 1.2vw, 15px)', color: '#6B6B6B', lineHeight: 1.65, margin: 0, fontWeight: 400 }}>
                 {card.description}
               </p>
 
@@ -245,18 +246,18 @@ export function FeatureCards() {
                 <ul
                   style={{
                     listStyle: 'none', padding: 0,
-                    margin: '16px 0 0',
+                    margin: '14px 0 0',
                     borderTop: '1px solid rgba(0,0,0,0.05)',
-                    paddingTop: '16px',
-                    display: 'flex', flexDirection: 'column', gap: '10px',
+                    paddingTop: '14px',
+                    display: 'flex', flexDirection: 'column', gap: '9px',
                   }}
                 >
                   {card.bullets.map((b) => (
                     <li
                       key={b}
                       style={{
-                        display: 'flex', alignItems: 'flex-start', gap: '8px',
-                        fontSize: '14px', color: '#4A4A4A', fontWeight: 500, lineHeight: 1.45,
+                        display: 'flex', alignItems: 'flex-start', gap: '7px',
+                        fontSize: 'clamp(12px, 1.1vw, 14px)', color: '#4A4A4A', fontWeight: 500, lineHeight: 1.4,
                       }}
                     >
                       <BulletIcon />

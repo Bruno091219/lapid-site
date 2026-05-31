@@ -1,14 +1,14 @@
 export function AnchorPhrase() {
   return (
     <section
+      className="py-16 lg:py-[100px] px-6"
       style={{
-        padding: '100px 24px',
         background: '#F3F0EA',
         textAlign: 'center',
       }}
     >
       <div className="reveal" style={{ maxWidth: '900px', margin: '0 auto' }}>
-        <p
+        <h2
           style={{
             fontSize: 'clamp(28px, 4.5vw, 60px)',
             fontWeight: 700,
@@ -20,7 +20,7 @@ export function AnchorPhrase() {
         >
           Tudo que seu studio precisa.{' '}
           <span className="gold-text">Em um lugar só.</span>
-        </p>
+        </h2>
       </div>
     </section>
   );
