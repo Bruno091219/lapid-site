@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /onboarding
+
+Sitemap: https://lapid.com.br/sitemap.xml

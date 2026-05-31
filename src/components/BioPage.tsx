@@ -138,8 +138,8 @@ export function BioPage() {
           {/* Right — iPhones */}
           <div className="reveal reveal-delay-2">
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'flex-start' }}>
-              <IPhoneMockup src="/screenshots/biotela1.jpeg" alt="Página pública Lapid — tela 1" offsetTop />
-              <IPhoneMockup src="/screenshots/biotela2.jpeg" alt="Página pública Lapid — tela 2" />
+              <IPhoneMockup src="/screenshots/biotela1.jpeg" alt="Página pública do Lapid Studio para bio do Instagram" offsetTop />
+              <IPhoneMockup src="/screenshots/biotela2.jpeg" alt="Página pública do Lapid Studio para bio do Instagram" />
             </div>
           </div>
 

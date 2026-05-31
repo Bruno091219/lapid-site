@@ -143,7 +143,7 @@ export function Hero() {
               </div>
               <img
                 src="/screenshots/dashboard-lapid.png"
-                alt="Dashboard Lapid"
+                alt="Dashboard do Lapid Studio mostrando faturamento e agendamentos"
                 width="1280"
                 height="800"
                 style={{ width: '100%', display: 'block' }}

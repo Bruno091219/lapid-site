@@ -22,7 +22,7 @@ function ScreenMockup({ src }: { src: string }) {
       </div>
       <img
         src={src}
-        alt="Lapid CRM com WhatsApp"
+        alt="CRM do Lapid Studio com pipeline de vendas e WhatsApp integrado"
         loading="lazy"
         width="1280"
         height="720"
