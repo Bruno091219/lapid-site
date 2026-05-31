@@ -27,8 +27,8 @@ function ScreenMockup({ src }: { src: string }) {
 
 const checkIcon = (
   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style={{ flexShrink: 0 }}>
-    <circle cx="9" cy="9" r="9" fill="rgba(196,147,63,0.12)" />
-    <path d="M5.5 9L7.5 11L12.5 6" stroke="#C4933F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="9" cy="9" r="9" fill="rgba(157,113,71,0.12)" />
+    <path d="M5.5 9L7.5 11L12.5 6" stroke="#9D7147" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
@@ -48,7 +48,7 @@ export function CRMSection() {
             <span
               style={{
                 fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
-                textTransform: 'uppercase', color: '#C4933F', display: 'block', marginBottom: '20px',
+                textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '20px',
               }}
             >
               CRM com WhatsApp

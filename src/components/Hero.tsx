@@ -16,7 +16,7 @@ export function Hero() {
         style={{
           position: 'absolute', top: '-10%', right: '-5%', pointerEvents: 'none',
           width: '55vw', height: '55vw', maxWidth: '720px',
-          background: 'radial-gradient(ellipse, rgba(196,147,63,0.07) 0%, transparent 68%)',
+          background: 'radial-gradient(ellipse, rgba(157,113,71,0.07) 0%, transparent 68%)',
         }}
       />
 
@@ -29,12 +29,12 @@ export function Hero() {
             <div
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '8px',
-                background: 'rgba(196,147,63,0.1)', borderRadius: '980px',
+                background: 'rgba(157,113,71,0.1)', borderRadius: '980px',
                 padding: '6px 14px', marginBottom: '32px',
               }}
             >
-              <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#C4933F' }} />
-              <span style={{ fontSize: '13px', fontWeight: 600, color: '#C4933F', letterSpacing: '0.02em' }}>
+              <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#9D7147' }} />
+              <span style={{ fontSize: '13px', fontWeight: 600, color: '#9D7147', letterSpacing: '0.02em' }}>
                 Feito para piercing e estética
               </span>
             </div>
@@ -96,7 +96,7 @@ export function Hero() {
                   }}
                 >
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                    <path d="M2.5 7L5.5 10L11.5 4" stroke="#C4933F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M2.5 7L5.5 10L11.5 4" stroke="#9D7147" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   {t}
                 </span>

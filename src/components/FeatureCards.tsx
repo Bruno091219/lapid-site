@@ -91,9 +91,9 @@ export function FeatureCards() {
               <div
                 style={{
                   width: '48px', height: '48px', borderRadius: '12px',
-                  background: 'rgba(196,147,63,0.1)',
+                  background: 'rgba(157,113,71,0.1)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: '#C4933F', marginBottom: '20px',
+                  color: '#9D7147', marginBottom: '20px',
                 }}
               >
                 {card.icon}

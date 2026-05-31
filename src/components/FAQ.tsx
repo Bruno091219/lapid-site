@@ -57,8 +57,8 @@ export function FAQ() {
               className="reveal"
               style={{
                 borderRadius: '14px',
-                border: `1px solid ${open === i ? 'rgba(196,147,63,0.28)' : 'rgba(0,0,0,0.07)'}`,
-                background: open === i ? 'rgba(196,147,63,0.03)' : '#FFFFFF',
+                border: `1px solid ${open === i ? 'rgba(157,113,71,0.28)' : 'rgba(0,0,0,0.07)'}`,
+                background: open === i ? 'rgba(157,113,71,0.03)' : '#FFFFFF',
                 overflow: 'hidden',
                 transition: 'border-color 0.2s ease, background 0.2s ease',
               }}
@@ -83,7 +83,7 @@ export function FAQ() {
                 <div
                   style={{
                     width: '24px', height: '24px', borderRadius: '50%', flexShrink: 0,
-                    background: open === i ? '#C4933F' : 'rgba(0,0,0,0.06)',
+                    background: open === i ? '#9D7147' : 'rgba(0,0,0,0.06)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     transition: 'background 0.2s, transform 0.25s',
                     transform: open === i ? 'rotate(45deg)' : 'rotate(0)',

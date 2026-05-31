@@ -24,7 +24,7 @@
 @layer components {
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2 font-semibold cursor-pointer;
-    background: #C4933F;
+    background: linear-gradient(135deg, #9D7147 0%, #BEA885 100%);
     color: #FFFFFF;
     padding: 14px 28px;
     border-radius: 980px;
@@ -33,12 +33,12 @@
     line-height: 1;
     border: none;
     text-decoration: none;
-    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    transition: filter 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
   }
   .btn-gold:hover {
-    background: #A87A2E;
+    filter: brightness(0.88);
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(196, 147, 63, 0.35);
+    box-shadow: 0 8px 24px rgba(157, 113, 71, 0.35);
   }
 
   .btn-ghost {
@@ -79,7 +79,7 @@
   }
 
   .gold-text {
-    background: linear-gradient(135deg, #C4933F 0%, #E8B86A 55%, #C4933F 100%);
+    background: linear-gradient(135deg, #9D7147 0%, #BEA885 55%, #9D7147 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -106,4 +106,4 @@
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #FAFAF8; }
-::-webkit-scrollbar-thumb { background: #C4933F; border-radius: 999px; }
+::-webkit-scrollbar-thumb { background: #9D7147; border-radius: 999px; }

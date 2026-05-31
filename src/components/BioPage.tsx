@@ -28,8 +28,8 @@ function IPhoneMockup({ src, alt, offsetTop = false }: { src: string; alt: strin
 
 const checkIcon = (
   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style={{ flexShrink: 0 }}>
-    <circle cx="9" cy="9" r="9" fill="rgba(196,147,63,0.12)" />
-    <path d="M5.5 9L7.5 11L12.5 6" stroke="#C4933F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="9" cy="9" r="9" fill="rgba(157,113,71,0.12)" />
+    <path d="M5.5 9L7.5 11L12.5 6" stroke="#9D7147" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
@@ -44,7 +44,7 @@ export function BioPage() {
             <span
               style={{
                 fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
-                textTransform: 'uppercase', color: '#C4933F', display: 'block', marginBottom: '20px',
+                textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '20px',
               }}
             >
               Página na bio do Instagram
@@ -65,13 +65,16 @@ export function BioPage() {
                 fontWeight: 400, margin: '0 0 36px', letterSpacing: '-0.01em',
               }}
             >
-              Um link que mostra sua agenda, catálogo de joias e informações do studio. Seus clientes agendam sozinhos — sem precisar chamar no WhatsApp.
+              Um link que apresenta seu studio de forma elegante — galeria de fotos, catálogo de joias, informações completas, avaliações de clientes, FAQ e muito mais. Tudo organizado, tudo no lugar certo.
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '14px' }}>
               {[
-                'Agenda online integrada',
-                'Catálogo de joias e procedimentos',
+                'Catálogo completo de joias e procedimentos',
+                'Galeria de fotos do seu trabalho',
+                'Avaliações e depoimentos de clientes',
+                'FAQ para dúvidas frequentes',
                 'Informações e contato do studio',
+                'Aparece no Google — ajuda seu SEO',
                 'Sem código, sem desenvolvedor',
               ].map((item) => (
                 <li

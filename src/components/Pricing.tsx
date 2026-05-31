@@ -1,4 +1,6 @@
 const SIGNUP_URL = 'https://app.lapid.com.br/auth?signup=true';
+const GOLD_GRADIENT = 'linear-gradient(135deg, #9D7147 0%, #BEA885 100%)';
+const GOLD_GRADIENT_HOVER = 'linear-gradient(135deg, #7A5535 0%, #9D7147 100%)';
 
 const plans = [
   {
@@ -13,6 +15,7 @@ const plans = [
       'Até 2 profissionais',
     ],
     highlighted: false,
+    badge: undefined as string | undefined,
   },
   {
     name: 'Studio Completo',
@@ -40,6 +43,7 @@ const plans = [
       'Até 5 profissionais',
     ],
     highlighted: false,
+    badge: undefined as string | undefined,
   },
 ];
 
@@ -53,7 +57,7 @@ export function Pricing() {
           <span
             style={{
               fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
-              textTransform: 'uppercase', color: '#C4933F', display: 'block', marginBottom: '16px',
+              textTransform: 'uppercase', color: '#9D7147', display: 'block', marginBottom: '16px',
             }}
           >
             Planos
@@ -88,12 +92,12 @@ export function Pricing() {
                 transform: plan.highlighted ? 'scale(1.02)' : 'none',
               }}
             >
-              {plan.highlighted && 'badge' in plan && plan.badge && (
+              {plan.badge && (
                 <div
                   style={{
                     position: 'absolute', top: '-14px', left: '50%',
                     transform: 'translateX(-50%)',
-                    background: '#C4933F', color: 'white',
+                    background: GOLD_GRADIENT, color: 'white',
                     padding: '5px 16px', borderRadius: '980px',
                     fontSize: '12px', fontWeight: 700, letterSpacing: '0.04em',
                     whiteSpace: 'nowrap',
@@ -106,7 +110,7 @@ export function Pricing() {
               <div style={{ marginBottom: '32px' }}>
                 <p
                   style={{
-                    fontSize: '14px', fontWeight: 600, color: '#C4933F',
+                    fontSize: '14px', fontWeight: 600, color: '#9D7147',
                     letterSpacing: '0.02em', margin: '0 0 8px',
                   }}
                 >
@@ -133,21 +137,20 @@ export function Pricing() {
                 href={SIGNUP_URL}
                 style={{
                   display: 'flex', justifyContent: 'center', width: '100%',
-                  background: plan.highlighted ? '#C4933F' : 'transparent',
+                  background: plan.highlighted ? GOLD_GRADIENT : 'transparent',
                   color: plan.highlighted ? 'white' : '#0A0A0A',
                   padding: '15px 24px', borderRadius: '980px',
                   fontSize: '15px', fontWeight: 600, textDecoration: 'none',
                   border: plan.highlighted ? 'none' : '1.5px solid rgba(0,0,0,0.18)',
-                  transition: 'background 0.2s, transform 0.15s, box-shadow 0.2s',
+                  transition: 'filter 0.2s, transform 0.15s, border-color 0.2s, background 0.2s',
                   letterSpacing: '-0.01em',
                   marginBottom: '32px',
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   if (plan.highlighted) {
-                    el.style.background = '#A87A2E';
+                    el.style.background = GOLD_GRADIENT_HOVER;
                     el.style.transform = 'translateY(-1px)';
-                    el.style.boxShadow = '0 8px 24px rgba(196,147,63,0.35)';
                   } else {
                     el.style.background = 'rgba(0,0,0,0.03)';
                     el.style.borderColor = 'rgba(0,0,0,0.3)';
@@ -156,9 +159,8 @@ export function Pricing() {
                 onMouseLeave={(e) => {
                   const el = e.currentTarget as HTMLElement;
                   if (plan.highlighted) {
-                    el.style.background = '#C4933F';
+                    el.style.background = GOLD_GRADIENT;
                     el.style.transform = 'translateY(0)';
-                    el.style.boxShadow = 'none';
                   } else {
                     el.style.background = 'transparent';
                     el.style.borderColor = 'rgba(0,0,0,0.18)';
@@ -179,8 +181,8 @@ export function Pricing() {
                       }}
                     >
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
-                        <circle cx="8" cy="8" r="8" fill={plan.highlighted ? 'rgba(196,147,63,0.2)' : 'rgba(196,147,63,0.1)'} />
-                        <path d="M4.5 8L6.5 10L11.5 5" stroke="#C4933F" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <circle cx="8" cy="8" r="8" fill={plan.highlighted ? 'rgba(157,113,71,0.2)' : 'rgba(157,113,71,0.1)'} />
+                        <path d="M4.5 8L6.5 10L11.5 5" stroke="#9D7147" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                       {f}
                     </li>

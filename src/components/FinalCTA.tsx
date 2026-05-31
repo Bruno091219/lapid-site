@@ -1,3 +1,6 @@
+const GOLD_GRADIENT = 'linear-gradient(135deg, #9D7147 0%, #BEA885 100%)';
+const GOLD_GRADIENT_HOVER = 'linear-gradient(135deg, #7A5535 0%, #9D7147 100%)';
+
 export function FinalCTA() {
   return (
     <section
@@ -32,7 +35,7 @@ export function FinalCTA() {
             href="https://app.lapid.com.br/auth?signup=true"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '8px',
-              background: '#C4933F', color: 'white',
+              background: GOLD_GRADIENT, color: 'white',
               padding: '18px 40px', borderRadius: '980px',
               fontSize: '17px', fontWeight: 600, textDecoration: 'none',
               letterSpacing: '-0.01em',
@@ -40,13 +43,13 @@ export function FinalCTA() {
             }}
             onMouseEnter={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = '#A87A2E';
+              el.style.background = GOLD_GRADIENT_HOVER;
               el.style.transform = 'translateY(-2px)';
-              el.style.boxShadow = '0 12px 32px rgba(196,147,63,0.4)';
+              el.style.boxShadow = '0 12px 32px rgba(157,113,71,0.4)';
             }}
             onMouseLeave={(e) => {
               const el = e.currentTarget as HTMLElement;
-              el.style.background = '#C4933F';
+              el.style.background = GOLD_GRADIENT;
               el.style.transform = 'translateY(0)';
               el.style.boxShadow = 'none';
             }}
