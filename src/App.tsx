@@ -5,7 +5,6 @@ import { AnchorPhrase } from './components/AnchorPhrase';
 import { BioPage } from './components/BioPage';
 import { CRMSection } from './components/CRMSection';
 import { FeatureCards } from './components/FeatureCards';
-import { Testimonials } from './components/Testimonials';
 import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
@@ -34,7 +33,6 @@ function App() {
         <BioPage />
         <CRMSection />
         <FeatureCards />
-        <Testimonials />
         <Pricing />
         <FAQ />
         <FinalCTA />

@@ -65,31 +65,8 @@ export function Hero() {
               Agenda, CRM, PDV, anamnese e pós-atendimento. Tudo em um só lugar, simples de usar — no celular ou no computador.
             </p>
 
-            {/* Stats */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0', marginBottom: '40px' }}>
-              {[
-                { value: '200+', label: 'studios ativos' },
-                { value: '4.9 ★', label: 'avaliação média' },
-                { value: '15 dias', label: 'grátis pra testar' },
-              ].map((stat, i) => (
-                <div key={stat.label} style={{ display: 'flex', alignItems: 'stretch', gap: '0' }}>
-                  {i > 0 && (
-                    <div style={{ width: '1px', background: 'rgba(0,0,0,0.1)', margin: '0 24px', alignSelf: 'stretch' }} />
-                  )}
-                  <div style={{ paddingRight: i < 2 ? '0' : '0' }}>
-                    <div style={{ fontSize: '26px', fontWeight: 800, letterSpacing: '-0.03em', color: '#0A0A0A', lineHeight: 1.1 }}>
-                      {stat.value}
-                    </div>
-                    <div style={{ fontSize: '13px', color: '#888', fontWeight: 500, marginTop: '2px' }}>
-                      {stat.label}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             {/* CTAs */}
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '28px' }}>
               <a
                 href="https://app.lapid.com.br/auth?signup=true"
                 className="btn-gold"
@@ -104,6 +81,24 @@ export function Hero() {
               >
                 Ver planos
               </a>
+            </div>
+
+            {/* Trust signals — apenas fatos reais do produto */}
+            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+              {['15 dias grátis', 'Sem cartão de crédito', 'Cancele quando quiser'].map((t) => (
+                <span
+                  key={t}
+                  style={{
+                    fontSize: '13px', color: '#8A8A8A', fontWeight: 500,
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                  }}
+                >
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M2.5 7L5.5 10L11.5 4" stroke="#9D7147" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  {t}
+                </span>
+              ))}
             </div>
           </div>
 
