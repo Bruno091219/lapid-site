@@ -1,213 +1,203 @@
-import { Check, X, ArrowRight } from 'lucide-react';
-import { DiamondDecor } from './DiamondLogo';
-
 const SIGNUP_URL = 'https://app.lapid.com.br/auth?signup=true';
 
 const plans = [
   {
-    id: 'essencial',
-    name: 'Studio Essencial',
-    price: 127,
-    period: 'mês',
-    users: 'Até 2 usuários',
-    tagline: 'Para studios que precisam de gestão completa do dia a dia.',
-    highlight: false,
-    badge: null,
-    features: [
-      { label: 'Até 2 usuários', included: true },
-      { label: 'Dashboard financeiro', included: true },
-      { label: 'Agendamento completo', included: true },
-      { label: 'Clientes com histórico completo', included: true },
-      { label: 'PDV com atendimento simultâneo', included: true },
-      { label: 'Controle financeiro', included: true },
-      { label: 'Gestão de Produtos', included: true },
-      { label: 'Pós-Atendimento automatizado', included: true },
-      { label: 'Anamnese Digital', included: true },
-      { label: 'CRM e Pipeline de vendas', included: false },
-      { label: 'WhatsApp integrado nativo', included: false },
-      { label: 'Lapid Analytics', included: false },
-      { label: 'Página pública no Instagram', included: false },
-    ],
-    cta: 'Testar Studio Essencial',
-    ctaStyle: 'ghost',
-  },
-  {
-    id: 'completo',
-    name: 'Studio Completo',
-    price: 167,
-    period: 'mês',
-    users: 'Até 5 usuários',
-    tagline: 'Para studios que querem crescer com CRM, WhatsApp e Analytics.',
-    highlight: true,
-    badge: 'Mais popular',
-    features: [
-      { label: 'Até 5 usuários', included: true },
-      { label: 'Dashboard financeiro', included: true },
-      { label: 'Agendamento completo', included: true },
-      { label: 'Clientes com histórico completo', included: true },
-      { label: 'PDV com atendimento simultâneo', included: true },
-      { label: 'Controle financeiro', included: true },
-      { label: 'Gestão de Produtos', included: true },
-      { label: 'Pós-Atendimento automatizado', included: true },
-      { label: 'Anamnese Digital', included: true },
-      { label: 'CRM com Kanban e automações', included: true },
-      { label: 'WhatsApp integrado nativo', included: true },
-      { label: 'Lapid Analytics (CAC, ROI, funil)', included: true },
-      { label: 'Página pública no Instagram', included: true },
-    ],
-    cta: 'Testar Studio Completo',
-    ctaStyle: 'gold',
-  },
-  {
-    id: 'crm-pro',
     name: 'CRM Pro',
     price: 97,
-    period: 'mês',
-    users: 'Até 2 usuários',
-    tagline: 'Para quem foca em vendas, leads e relacionamento com clientes.',
-    highlight: false,
-    badge: null,
+    description: 'Para studios começando a se organizar.',
     features: [
-      { label: 'Até 2 usuários', included: true },
-      { label: 'CRM completo com Kanban', included: true },
-      { label: 'Pipeline de vendas', included: true },
-      { label: 'WhatsApp integrado nativo', included: true },
-      { label: 'Agendamento', included: true },
-      { label: 'Cadastro de clientes', included: true },
-      { label: 'PDV e controle financeiro', included: false },
-      { label: 'Gestão de Produtos', included: false },
-      { label: 'Pós-Atendimento automatizado', included: false },
-      { label: 'Anamnese Digital', included: false },
-      { label: 'Lapid Analytics', included: false },
-      { label: 'Página pública no Instagram', included: false },
+      'CRM completo com Kanban',
+      'Agendamento online',
+      'Ficha do cliente',
+      'WhatsApp integrado',
+      'Até 2 profissionais',
     ],
-    cta: 'Começar com CRM Pro',
-    ctaStyle: 'ghost',
+    highlighted: false,
+  },
+  {
+    name: 'Studio Completo',
+    price: 167,
+    description: 'Para studios que querem crescer de verdade.',
+    badge: 'Mais popular',
+    features: [
+      'Tudo do Studio Essencial',
+      'CRM com WhatsApp nativo',
+      'Página na bio do Instagram',
+      'Analytics completo',
+      'Profissionais ilimitados',
+    ],
+    highlighted: true,
+  },
+  {
+    name: 'Studio Essencial',
+    price: 127,
+    description: 'Para studios em crescimento.',
+    features: [
+      'Tudo do CRM Pro',
+      'PDV integrado',
+      'Anamnese digital',
+      'Pós-atendimento automático',
+      'Até 5 profissionais',
+    ],
+    highlighted: false,
   },
 ];
 
 export function Pricing() {
   return (
-    <section className="py-24 relative overflow-hidden" id="planos">
-      <div className="absolute top-0 left-0 right-0 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, rgba(157,113,71,0.2) 30%, rgba(157,113,71,0.2) 70%, transparent)' }}
-      />
-      {/* Background */}
-      <div className="absolute inset-0"
-        style={{ background: 'radial-gradient(ellipse 60% 70% at 50% 100%, rgba(157,113,71,0.06) 0%, transparent 60%)' }}
-      />
+    <section id="planos" style={{ padding: '120px 0', background: '#F3F0EA' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-4">
-          <div className="section-label justify-center mb-4">
-            <DiamondDecor size={14} />
-            Planos e preços
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-stone-900 mb-5">
-            Invista no seu studio.
-            <span className="gold-text block">Não em dez ferramentas.</span>
+        <div className="reveal" style={{ textAlign: 'center', marginBottom: '72px' }}>
+          <span
+            style={{
+              fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em',
+              textTransform: 'uppercase', color: '#C4933F', display: 'block', marginBottom: '16px',
+            }}
+          >
+            Planos
+          </span>
+          <h2
+            style={{
+              fontSize: 'clamp(36px, 4.5vw, 64px)',
+              fontWeight: 800, letterSpacing: '-0.03em', lineHeight: 1.05,
+              color: '#0A0A0A', margin: '0 0 16px',
+            }}
+          >
+            Simples e transparente.
           </h2>
-          <p className="text-lg text-stone-500 mb-3">
-            Todos os planos incluem <strong className="text-stone-700">15 dias de teste gratuito</strong>. Sem cartão de crédito.
+          <p style={{ fontSize: '18px', color: '#6B6B6B', fontWeight: 400, letterSpacing: '-0.01em', margin: 0 }}>
+            15 dias grátis em todos os planos. Sem cartão de crédito.
           </p>
         </div>
 
-        {/* Trial badge */}
-        <div className="flex justify-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-600/30 bg-gold-600/8">
-            <DiamondDecor size={12} />
-            <span className="text-xs font-medium text-gold-300">15 dias grátis · Sem cartão · Cancele quando quiser</span>
-          </div>
-        </div>
-
-        {/* Pricing cards */}
-        <div className="grid lg:grid-cols-3 gap-6 items-start">
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           {plans.map((plan, i) => (
             <div
-              key={plan.id}
-              className={`reveal rounded-2xl p-7 relative transition-all duration-300 ${
-                plan.highlight
-                  ? 'border border-gold-600/50 shadow-gold-lg'
-                  : 'card-dark'
-              }`}
+              key={plan.name}
+              className={`reveal reveal-delay-${i + 1}`}
               style={{
-                transitionDelay: `${i * 0.12}s`,
-                background: plan.highlight ? 'rgba(28,24,20,0.97)' : undefined,
-                transform: plan.highlight ? 'scale(1.02)' : undefined,
+                background: plan.highlighted ? '#0A0A0A' : '#FFFFFF',
+                border: plan.highlighted ? 'none' : '1px solid rgba(0,0,0,0.08)',
+                borderRadius: '24px',
+                padding: '40px 36px',
+                position: 'relative',
+                boxShadow: plan.highlighted ? '0 32px 80px rgba(0,0,0,0.18)' : 'none',
+                transform: plan.highlighted ? 'scale(1.02)' : 'none',
               }}
             >
-              {/* Badge */}
-              {plan.badge && (
-                <div className={`absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold ${
-                  plan.highlight
-                    ? 'text-onyx'
-                    : 'text-gold-300 border border-gold-600/40 bg-gold-600/10'
-                }`}
-                  style={plan.highlight ? { background: 'linear-gradient(135deg, #9D7147, #BEA885)' } : undefined}
+              {plan.highlighted && 'badge' in plan && plan.badge && (
+                <div
+                  style={{
+                    position: 'absolute', top: '-14px', left: '50%',
+                    transform: 'translateX(-50%)',
+                    background: '#C4933F', color: 'white',
+                    padding: '5px 16px', borderRadius: '980px',
+                    fontSize: '12px', fontWeight: 700, letterSpacing: '0.04em',
+                    whiteSpace: 'nowrap',
+                  }}
                 >
                   {plan.badge}
                 </div>
               )}
 
-              {/* Plan header */}
-              <div className="mb-6">
-                <h3 className="text-lg font-bold text-white mb-1">{plan.name}</h3>
-                <p className="text-sm text-white/45 mb-5">{plan.tagline}</p>
-                <div className="flex items-end gap-1">
-                  <span className="text-sm text-white/50 font-medium">R$</span>
-                  <span className="text-5xl font-black text-white leading-none">{plan.price}</span>
-                  <span className="text-sm text-white/40 mb-1">/{plan.period}</span>
+              <div style={{ marginBottom: '32px' }}>
+                <p
+                  style={{
+                    fontSize: '14px', fontWeight: 600, color: '#C4933F',
+                    letterSpacing: '0.02em', margin: '0 0 8px',
+                  }}
+                >
+                  {plan.name}
+                </p>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '4px', margin: '0 0 10px' }}>
+                  <span style={{ fontSize: '14px', fontWeight: 500, color: plan.highlighted ? '#666' : '#888' }}>R$</span>
+                  <span
+                    style={{
+                      fontSize: 'clamp(44px, 5vw, 64px)', fontWeight: 800, letterSpacing: '-0.04em',
+                      color: plan.highlighted ? '#FFFFFF' : '#0A0A0A', lineHeight: 1,
+                    }}
+                  >
+                    {plan.price}
+                  </span>
+                  <span style={{ fontSize: '14px', color: plan.highlighted ? '#666' : '#888', fontWeight: 500 }}>/mês</span>
                 </div>
-                <div className="mt-2 text-xs text-white/35 font-medium">{plan.users}</div>
+                <p style={{ fontSize: '15px', color: plan.highlighted ? '#999' : '#6B6B6B', margin: 0, lineHeight: 1.5 }}>
+                  {plan.description}
+                </p>
               </div>
 
-              {/* CTA */}
               <a
                 href={SIGNUP_URL}
-                className={`w-full flex items-center justify-center gap-2 py-3.5 rounded-xl font-semibold text-sm mb-6 transition-all duration-200 ${
-                  plan.ctaStyle === 'gold' ? 'btn-gold' : 'btn-ghost'
-                }`}
+                style={{
+                  display: 'flex', justifyContent: 'center', width: '100%',
+                  background: plan.highlighted ? '#C4933F' : 'transparent',
+                  color: plan.highlighted ? 'white' : '#0A0A0A',
+                  padding: '15px 24px', borderRadius: '980px',
+                  fontSize: '15px', fontWeight: 600, textDecoration: 'none',
+                  border: plan.highlighted ? 'none' : '1.5px solid rgba(0,0,0,0.18)',
+                  transition: 'background 0.2s, transform 0.15s, box-shadow 0.2s',
+                  letterSpacing: '-0.01em',
+                  marginBottom: '32px',
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  if (plan.highlighted) {
+                    el.style.background = '#A87A2E';
+                    el.style.transform = 'translateY(-1px)';
+                    el.style.boxShadow = '0 8px 24px rgba(196,147,63,0.35)';
+                  } else {
+                    el.style.background = 'rgba(0,0,0,0.03)';
+                    el.style.borderColor = 'rgba(0,0,0,0.3)';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  if (plan.highlighted) {
+                    el.style.background = '#C4933F';
+                    el.style.transform = 'translateY(0)';
+                    el.style.boxShadow = 'none';
+                  } else {
+                    el.style.background = 'transparent';
+                    el.style.borderColor = 'rgba(0,0,0,0.18)';
+                  }
+                }}
               >
-                {plan.cta}
-                <ArrowRight size={14} />
+                Começar grátis
               </a>
 
-              {/* Divider */}
-              <div className="h-px bg-white/5 mb-5" />
-
-              {/* Features */}
-              <div className="flex flex-col gap-3">
-                {plan.features.map((feature) => (
-                  <div key={feature.label} className="flex items-center gap-3">
-                    <div
-                      className="shrink-0 w-4 h-4 rounded-full flex items-center justify-center"
+              <div style={{ borderTop: `1px solid ${plan.highlighted ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)'}`, paddingTop: '28px' }}>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {plan.features.map((f) => (
+                    <li
+                      key={f}
                       style={{
-                        background: feature.included ? 'rgba(157,113,71,0.2)' : 'rgba(255,255,255,0.04)',
-                        border: feature.included ? '1px solid rgba(157,113,71,0.4)' : '1px solid rgba(255,255,255,0.1)',
+                        display: 'flex', alignItems: 'center', gap: '10px',
+                        fontSize: '15px', color: plan.highlighted ? '#E0E0E0' : '#3A3A3A', fontWeight: 400,
                       }}
                     >
-                      {feature.included
-                        ? <Check size={9} className="text-gold-400" />
-                        : <X size={9} className="text-white/20" />
-                      }
-                    </div>
-                    <span className={`text-sm ${feature.included ? 'text-white/70' : 'text-white/25 line-through decoration-white/15'}`}>
-                      {feature.label}
-                    </span>
-                  </div>
-                ))}
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0 }}>
+                        <circle cx="8" cy="8" r="8" fill={plan.highlighted ? 'rgba(196,147,63,0.2)' : 'rgba(196,147,63,0.1)'} />
+                        <path d="M4.5 8L6.5 10L11.5 5" stroke="#C4933F" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Trust footnote */}
-        <div className="mt-12 text-center">
-          <p className="text-sm text-stone-400">
-            Cancelamento a qualquer momento · Suporte via WhatsApp · Migração de dados gratuita · Dados criptografados
+        {/* Footnote */}
+        <div className="reveal" style={{ textAlign: 'center', marginTop: '48px' }}>
+          <p style={{ fontSize: '14px', color: '#8A8A8A', margin: 0 }}>
+            Sem fidelidade · Cancele quando quiser · Suporte pelo WhatsApp · Dados criptografados
           </p>
         </div>
+
       </div>
     </section>
   );

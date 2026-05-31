@@ -1,51 +1,39 @@
 import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { Problem } from './components/Problem';
-import { Solution } from './components/Solution';
-import { Features } from './components/Features';
-import { Differentials } from './components/Differentials';
-import { UniqueFeatures } from './components/UniqueFeatures';
-import { HowItWorks } from './components/HowItWorks';
+import { AnchorPhrase } from './components/AnchorPhrase';
+import { BioPage } from './components/BioPage';
+import { CRMSection } from './components/CRMSection';
+import { FeatureCards } from './components/FeatureCards';
 import { Pricing } from './components/Pricing';
-import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 
 function App() {
-  // Intersection Observer for reveal animations
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
+          if (entry.isIntersecting) entry.target.classList.add('visible');
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
-
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach((el) => observer.observe(el));
-
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF9F7] text-stone-900 overflow-x-hidden">
+    <div style={{ background: '#FAFAF8', overflowX: 'hidden' }}>
       <Header />
       <main>
         <Hero />
-        <Problem />
-        <Solution />
-        <Features />
-        <UniqueFeatures />
-        <Differentials />
-        <HowItWorks />
+        <AnchorPhrase />
+        <BioPage />
+        <CRMSection />
+        <FeatureCards />
         <Pricing />
-        <Testimonials />
         <FAQ />
         <FinalCTA />
       </main>
