@@ -1,6 +1,6 @@
 const GOLD_GRADIENT = 'linear-gradient(135deg, #9D7147 0%, #BEA885 100%)';
 const GOLD_GRADIENT_HOVER = 'linear-gradient(135deg, #7A5535 0%, #9D7147 100%)';
-const WA_URL = 'https://wa.me/5511999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20Lapid!%20Podem%20me%20ajudar%3F';
+const WA_URL = 'https://wa.me/5511987889482?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20Lapid!%20Podem%20me%20ajudar%3F';
 
 export function FinalCTA() {
   return (

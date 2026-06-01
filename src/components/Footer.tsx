@@ -32,7 +32,7 @@ export function Footer() {
           {/* Real contact links */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511987889482"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -62,7 +62,7 @@ export function Footer() {
             </a>
 
             <a
-              href="https://instagram.com/lapidstudio"
+              href="https://instagram.com/lapid.studio"
               target="_blank"
               rel="noopener noreferrer"
               style={{
