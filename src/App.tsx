@@ -9,8 +9,12 @@ import { Pricing } from './components/Pricing';
 import { FAQ } from './components/FAQ';
 import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
+import { Termos } from './pages/Termos';
+import { Privacidade } from './pages/Privacidade';
 
-function App() {
+const path = window.location.pathname;
+
+function HomePage() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -40,6 +44,12 @@ function App() {
       <Footer />
     </div>
   );
+}
+
+function App() {
+  if (path === '/termos') return <Termos />;
+  if (path === '/privacidade') return <Privacidade />;
+  return <HomePage />;
 }
 
 export default App;

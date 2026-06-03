@@ -135,15 +135,18 @@ export function Footer() {
             © {new Date().getFullYear()} Lapid Studio. Todos os direitos reservados.
           </p>
           <div style={{ display: 'flex', gap: '20px' }}>
-            {['Privacidade', 'Termos'].map((l) => (
+            {[
+              { label: 'Privacidade', href: '/privacidade' },
+              { label: 'Termos', href: '/termos' },
+            ].map((l) => (
               <a
-                key={l}
-                href="#"
+                key={l.href}
+                href={l.href}
                 style={{ fontSize: '13px', color: 'rgba(255,255,255,0.25)', textDecoration: 'none', transition: 'color 0.15s' }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.25)'; }}
               >
-                {l}
+                {l.label}
               </a>
             ))}
           </div>
