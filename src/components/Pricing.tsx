@@ -2,19 +2,19 @@ const SIGNUP_URL = 'https://app.lapid.com.br/auth?signup=true';
 const GOLD_GRADIENT = 'linear-gradient(135deg, #9D7147 0%, #BEA885 100%)';
 const GOLD_GRADIENT_HOVER = 'linear-gradient(135deg, #7A5535 0%, #9D7147 100%)';
 
-type FeatureKey = 'crm' | 'essencial' | 'completo';
+type FeatureKey = 'crm_lapid' | 'essencial' | 'diamante';
 
-const featureMatrix: { label: string; crm: boolean; essencial: boolean; completo: boolean }[] = [
-  { label: 'CRM com WhatsApp nativo',      crm: true,  essencial: true,  completo: true  },
-  { label: 'Agendamento online',            crm: true,  essencial: true,  completo: true  },
-  { label: 'Ficha completa do cliente',     crm: true,  essencial: true,  completo: true  },
-  { label: 'Anamnese digital',              crm: true,  essencial: true,  completo: true  },
-  { label: 'PDV durante o atendimento',     crm: false, essencial: true,  completo: true  },
-  { label: 'Financeiro completo',           crm: false, essencial: true,  completo: true  },
-  { label: 'Pós-atendimento automático',    crm: false, essencial: true,  completo: true  },
-  { label: 'Página na bio do Instagram',    crm: false, essencial: false, completo: true  },
-  { label: 'Lapid Analytics',              crm: false, essencial: false, completo: true  },
-  { label: 'Profissionais ilimitados',      crm: false, essencial: false, completo: true  },
+const featureMatrix: { label: string; crm_lapid: boolean; essencial: boolean; diamante: boolean }[] = [
+  { label: 'Agendamento online',            crm_lapid: true,  essencial: true,  diamante: true  },
+  { label: 'Ficha completa do cliente',     crm_lapid: true,  essencial: true,  diamante: true  },
+  { label: 'Página na bio do Instagram',    crm_lapid: true,  essencial: true,  diamante: true  },
+  { label: 'CRM com WhatsApp nativo',       crm_lapid: true,  essencial: false, diamante: true  },
+  { label: 'PDV durante o atendimento',     crm_lapid: false, essencial: true,  diamante: true  },
+  { label: 'Financeiro completo',           crm_lapid: false, essencial: true,  diamante: true  },
+  { label: 'Anamnese digital',              crm_lapid: false, essencial: true,  diamante: true  },
+  { label: 'Pós-atendimento automático',    crm_lapid: false, essencial: true,  diamante: true  },
+  { label: 'Lapid Analytics',              crm_lapid: false, essencial: true,  diamante: true  },
+  { label: 'Profissionais ilimitados',      crm_lapid: false, essencial: false, diamante: true  },
 ];
 
 const plans: {
@@ -26,26 +26,26 @@ const plans: {
   featureKey: FeatureKey;
 }[] = [
   {
-    name: 'CRM Pro',
-    price: 97,
-    description: 'Para studios começando a se organizar.',
-    highlighted: false,
-    featureKey: 'crm',
-  },
-  {
     name: 'Studio Essencial',
-    price: 127,
-    description: 'A escolha mais popular dos studios.',
-    highlighted: true,
-    badge: 'Mais popular',
+    price: 97,
+    description: 'Operação completa do estúdio, sem CRM.',
+    highlighted: false,
     featureKey: 'essencial',
   },
   {
-    name: 'Studio Completo',
-    price: 167,
-    description: 'Para studios que querem o máximo.',
+    name: 'Studio Diamante',
+    price: 137,
+    description: 'Tudo incluído — CRM, equipe e analytics.',
+    highlighted: true,
+    badge: 'Mais popular',
+    featureKey: 'diamante',
+  },
+  {
+    name: 'CRM Lapid',
+    price: 97,
+    description: 'Foco em vendas e relacionamento.',
     highlighted: false,
-    featureKey: 'completo',
+    featureKey: 'crm_lapid',
   },
 ];
 
