@@ -53,8 +53,8 @@ export function DiamondLogo({ size = 32, className = '', variant = 'full' }: Dia
     <div className={`flex items-center gap-2.5 ${className}`}>
       <DiamondSVG size={size} />
       {variant === 'full' && (
-        <span className="font-bold tracking-tight" style={{ fontSize: size * 0.6, color: '#FAFAF8' }}>
-          <span className="gold-text">Lapid</span>
+        <span className="tracking-tight" style={{ fontSize: size * 0.6, color: '#FAFAF8' }}>
+          <span className="font-wordmark font-semibold gold-text">Lapid</span>
           <span style={{ color: '#FAFAF8', opacity: 0.7, fontWeight: 400 }}> Studio</span>
         </span>
       )}

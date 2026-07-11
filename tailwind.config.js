@@ -18,6 +18,9 @@ export default {
           700: '#7A5535',
           800: '#583C24',
           900: '#3A2615',
+          // Dourado sombra (Manual da Marca) — facetas de profundidade do
+          // diamante apenas; nunca usar isolado como bg/texto.
+          shadow: '#5F4429',
         },
         cream: '#FAFAF8',
         onyx: '#0A0A0A',
@@ -25,6 +28,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Inter', 'system-ui', 'sans-serif'],
+        wordmark: ["'Playfair Display'", 'Georgia', 'serif'],
       },
       backgroundImage: {
         'gold-gradient': 'linear-gradient(135deg, #9D7147 0%, #BEA885 50%, #D4B896 100%)',

@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <polygon points="16,2 28,10 28,22 16,30 4,22 4,10" fill="#9D7147"/>
-  <polygon points="16,6 24,12 24,20 16,26 8,20 8,12" fill="#BEA885"/>
-  <polygon points="16,10 20,14 20,18 16,22 12,18 12,14" fill="#FAFAF8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <polygon points="34,12 66,12 50,33" fill="#F7F4EF" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="34,12 10,38 50,33" fill="#BEA885" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="66,12 90,38 50,33" fill="#9D7147" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="10,38 32,38 50,92" fill="#9D7147" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="32,38 50,38 50,92" fill="#BEA885" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="50,38 68,38 50,92" fill="#9D7147" fill-opacity="0.88" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+  <polygon points="68,38 90,38 50,92" fill="#5F4429" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.3" stroke-linejoin="round"/>
+  <path d="M76 15 L78 20 L83 22 L78 24 L76 29 L74 24 L69 22 L74 20 Z" fill="#F7F4EF"/>
 </svg>

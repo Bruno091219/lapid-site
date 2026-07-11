@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
-  <g transform="translate(56, 4) scale(0.44)">
-    <line x1="200" y1="20" x2="90" y2="140" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="200" y1="20" x2="310" y2="140" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="20" y1="140" x2="380" y2="140" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="200" y1="20" x2="20" y2="140" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="200" y1="20" x2="380" y2="140" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="20" y1="140" x2="200" y2="340" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="380" y1="140" x2="200" y2="340" stroke="#9d7147" stroke-width="5" stroke-linecap="round"/>
-    <line x1="90" y1="140" x2="200" y2="340" stroke="#9d7147" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
-    <line x1="310" y1="140" x2="200" y2="340" stroke="#9d7147" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
-    <line x1="200" y1="20" x2="200" y2="140" stroke="#9d7147" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220">
+  <g transform="translate(60, 4) scale(0.8)">
+    <polygon points="34,12 66,12 50,33" fill="#F7F4EF" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="34,12 10,38 50,33" fill="#BEA885" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="66,12 90,38 50,33" fill="#9D7147" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="10,38 32,38 50,92" fill="#9D7147" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="32,38 50,38 50,92" fill="#BEA885" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="50,38 68,38 50,92" fill="#9D7147" fill-opacity="0.88" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.4" stroke-linejoin="round"/>
+    <polygon points="68,38 90,38 50,92" fill="#5F4429" stroke="#5F4429" stroke-width="0.6" stroke-opacity="0.3" stroke-linejoin="round"/>
+    <path d="M76 15 L78 20 L83 22 L78 24 L76 29 L74 24 L69 22 L74 20 Z" fill="#F7F4EF"/>
   </g>
-  <text x="100" y="162" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="700" letter-spacing="6" fill="#9d7147" text-anchor="middle">LAPID</text>
-  <text x="100" y="188" font-family="Inter, Helvetica Neue, sans-serif" font-size="11" font-weight="300" letter-spacing="8" fill="#BEA885" opacity="0.75" text-anchor="middle">STUDIO</text>
+  <text x="100" y="160" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" letter-spacing="5" fill="#0A0A0A" text-anchor="middle">LAPID</text>
+  <text x="100" y="186" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="7" fill="#9D7147" text-anchor="middle">STUDIO</text>
 </svg>
